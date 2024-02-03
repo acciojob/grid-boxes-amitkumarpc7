@@ -1,1 +1,32 @@
 /*  your css code here. If applicable */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+#grid{
+	display:grid;
+	font-size:30px;
+	gap:5px;
+	grid-template-columns:repeat(4,auto); 
+	grid-auto-rows:75px;
+}
+.Box{
+	background:green;
+	color:white;
+}
+#item1 {
+	grid-column:span 4;
+}
+#item2{
+	grid-row:2/6
+}
+#item4{
+	grid-column:3/5
+}
+#item5{
+	grid-column:2/4;
+}
+#item10{
+	grid-column:2/5;
+}
